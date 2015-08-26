@@ -32,4 +32,6 @@
 
 #include <stddef.h>
 
+// In almost all cases this should not be used directly. Intead use the mutex-protected crypto::rand
+
 void generate_random_bytes(size_t n, void *result);

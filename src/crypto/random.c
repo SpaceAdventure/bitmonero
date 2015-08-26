@@ -113,6 +113,8 @@ INITIALIZER(init_random) {
 #endif
 }
 
+// In almost all cases this should not be used directly. Intead use the mutex-protected crypto::rand
+
 void generate_random_bytes(size_t n, void *result) {
 #if !defined(NDEBUG)
   assert(curstate == 1);
